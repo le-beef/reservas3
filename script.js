@@ -1,4 +1,17 @@
+// Proteção Simples (Não segura)
+const senhaCorreta = "1234"; 
+let acessoPermitido = false;
 
+while (!acessoPermitido) {
+    const senhaDigitada = prompt("Por favor, digite a senha para acessar o mapa:");
+    
+    if (senhaDigitada === senhaCorreta) {
+        acessoPermitido = true;
+        alert("Acesso concedido!");
+    } else {
+        alert("Senha incorreta. Tente novamente.");
+    }
+}
 // O restante do seu script.js só rodará se a senha estiver correta.
 
 document.addEventListener('DOMContentLoaded', () => {
