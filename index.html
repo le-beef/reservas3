@@ -70,11 +70,11 @@
     
     <br>
     <div class="lista-ocupacao-container">
-        <h3>🪑 Mesas Ocupadas Atualmente (<span id="contador-ocupadas">0</span>)</h3>
-        <ul id="lista-mesas-ocupadas">
-            <li>Nenhuma mesa ocupada no momento.</li>
-        </ul>
-    </div>
+    <h3>🪑 Mesas (<span id="contador-mesas">0</span>) | 👥 Pessoas (<span id="contador-pessoas">0</span>)</h3>
+    <ul id="lista-mesas-ocupadas">
+        <li>Nenhuma mesa ocupada no momento.</li>
+    </ul>
+</div>
 
     <div id="modal-mesa" class="modal-overlay">
         <div class="modal-content">
@@ -82,7 +82,7 @@
                 <h2>Mesa: <span id="mesa-id-display"></span></h2>
             </div>
             <form id="form-ocupacao">
-                <div class="form-row">
+		    <div class="form-row">
                     <div class="form-group full-width">
                         <label for="nome-ocupante">Nome dos Ocupantes:</label>
                         <input type="text" id="nome-ocupante" required placeholder="Ex: João Silva">
@@ -166,6 +166,7 @@
 </body>
 
 </html>
+
 
 
 
